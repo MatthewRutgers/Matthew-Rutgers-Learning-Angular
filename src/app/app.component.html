@@ -1,0 +1,22 @@
+<!--
+<div>
+    <h1>My name is Matthew I think</h1>
+    <p>not so sure anymore.. I'm lost</p>
+  </div>
+  <div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>{{"You are " + myName + ". You are " + myAge + " years old."}}</p>
+
+</div>
+-->
+<main>
+
+  <!-- Assignment 2, dont forget you are Matthew -->
+  <div *ngFor="let item of productList">
+    <h1>{{ item.itemName }}</h1>
+    <aside>
+      <p>Made from: {{ item.madeFrom }} <br> Description: {{ item.desc }}</p>
+      <p *ngIf="!item.inStock" style="color: red">OUT OF STOCK</p>
+    </aside>
+  </div>
+</main>
