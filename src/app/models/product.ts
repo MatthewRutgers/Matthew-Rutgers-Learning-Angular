@@ -4,4 +4,5 @@ export interface Product {
   madeFrom: string;
   desc: string;
   inStock?: boolean;
+  imgPath?: string;
 }

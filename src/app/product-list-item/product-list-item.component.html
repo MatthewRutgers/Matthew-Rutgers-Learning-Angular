@@ -1,1 +1,7 @@
-<p>product-list-item works!</p>
+<div [ngStyle]="{'background-color': backgroundColour}">
+  <h2>{{product?.itemName}}</h2>
+  <p>Description: {{product?.desc}}</p>
+  <p>Made From: {{product?.madeFrom}}</p>
+  <p>{{product?.inStock ? 'In Stock' : 'Out of Stock'}}</p>
+  <img src="{{product?.imgPath}}" alt="missing image :("/>
+</div>
