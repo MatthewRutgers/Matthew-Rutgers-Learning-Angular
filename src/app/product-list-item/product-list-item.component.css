@@ -7,6 +7,10 @@ div {
   border-radius: 10px;
   font-family: 'Inter', sans-serif;
   float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div h2 {
@@ -32,7 +36,7 @@ div p {
 }
 
 img {
-  text-align: center;
+  display: block;
   height: 150px;
   width: 150px;
 }
