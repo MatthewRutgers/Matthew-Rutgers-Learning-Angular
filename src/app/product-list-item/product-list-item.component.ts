@@ -1,13 +1,14 @@
 import {Component, Input} from '@angular/core';
 import {Product} from "../models/product";
-import {NgOptimizedImage, NgStyle} from "@angular/common";
+import {NgIf, NgOptimizedImage, NgStyle} from "@angular/common";
 
 @Component({
   selector: 'app-product-list-item',
   standalone: true,
   imports: [
     NgStyle,
-    NgOptimizedImage
+    NgOptimizedImage,
+    NgIf
   ],
   templateUrl: './product-list-item.component.html',
   styleUrl: './product-list-item.component.css'
