@@ -13,7 +13,7 @@ export class ProductsService {
   constructor() {
   }
   // Create CRUD
-  getStudents(): Observable<Product[]> {
+  getProducts(): Observable<Product[]> {
     return of(productList);
   }
   addProduct(newProduct:Product) : Observable<Product[]> {

@@ -22,7 +22,7 @@ export class ProductListComponent {
 
   }
   ngOnInit() {
-    this.productService.getStudents().subscribe({
+    this.productService.getProducts().subscribe({
       next: (data: Product[]) => this.productList = data,
       error:err => console.log("Error fetching products", err),
       complete:() => console.log("Student data fetch completed")
