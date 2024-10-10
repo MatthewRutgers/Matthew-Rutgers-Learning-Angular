@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+/**
+CSS COLOURS:
+GREY - #3e4444
+LIGHT GREEN (H1 BACKGROUND) - #82b74b
+DARK GREEN (BORDER COLOUR) - #405d27
+OLIVE GREEN (MAIN BACKGROUND) - #bdcebe
+LIGHT BROWN (DIV BACKGROUND) - #c1946a
+ */
+
+/*
+
+ */
+html {
+  border: 10px solid black;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
+
+}
+header {
+  margin: 0 auto;
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+header h1 {
+  padding: 10px;
+  color: black;
+}
+.display-container {
+  border: 1px solid red;
+  padding: 25px;
+  background-color: orange;
+}
+.nav-container {
+  flex-grow: 1;
+  padding: 15px;
+  display: flex;
+}
+.nav-container nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-container nav a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  width: 50%;
+  padding: 10px;
+  margin: 5px;
+  border: 3px solid #3e4444;
+  background-color: #82b74b;
+  border-radius: 5px;
+}
