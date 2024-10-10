@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {Product} from "../models/product";
 import {ProductListItemComponent} from "../product-list-item/product-list-item.component";
 import {NgForOf, NgStyle} from "@angular/common";
+import {ProductsService} from "../services/products.service";
 
 @Component({
   selector: 'app-product-list',
@@ -15,5 +16,15 @@ import {NgForOf, NgStyle} from "@angular/common";
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
+  productList: Product[] = [];
+  constructor(private productService: ProductsService ) {
 
+  }
+  ngOnInit() {
+    this.productService.getStudents().subscribe({
+      next: (data: Product[]) => this.productList = data,
+      error:err => console.log("Error fetching products", err),
+      complete:() => console.log("Student data fetch completed")
+    })
+  }
 }
