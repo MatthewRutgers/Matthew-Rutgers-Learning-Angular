@@ -12,6 +12,12 @@ div {
   justify-content: center;
   align-items: center;
 }
+div:nth-child(even) {
+  background-color: #988558;
+}
+div:nth-child(odd) {
+  background-color: #C19A6B;
+}
 
 div h2 {
   padding: 5px;

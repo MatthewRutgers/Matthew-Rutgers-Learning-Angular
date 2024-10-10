@@ -1,6 +1,9 @@
+<app-product-list-item [product]="selectedProduct"></app-product-list-item>
 <div *ngFor="let product of productList; let index = index">
-    <app-product-list-item [product]="product" [backgroundColour]="index % 2 == 0 ? '#C19A6B' : '#988558'"></app-product-list-item>
+  <app-product-list-item [product]="product" (click)="selectProduct(product)" [backgroundColour]="index % 2 == 0 ? '#C19A6B' : '#988558'"></app-product-list-item>
 </div>
-<!--<img [src] = "src/app/assets/assets/paperlessbreadtag.png" alt="text">
+
+<!--
+<img [src] = "src/app/assets/assets/paperlessbreadtag.png" alt="text">
 -->
 
